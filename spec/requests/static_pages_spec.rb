@@ -30,7 +30,7 @@ describe "Static pages" do
       page.should have_selector('h1', :text => 'Help')
     end
 
-    it "should have the title 'Help'" do
+    it "shouldd have the title 'Help'" do
       visit '/static_pages/help'
       page.should have_selector('title', :text => "#{base_title} | Help")
     end
